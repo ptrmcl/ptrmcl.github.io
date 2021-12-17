@@ -2,23 +2,21 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: <b>Master's Student</b>. Computer Graphics & Vision
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: profile_pic.jpg
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! I'm a Master's student at the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/) in Seattle. I work with [Prof. Ira Kemelmacher-Shlizerman](https://www.irakemelmacher.com/) and [Dr. Soumyadip Sengupta](https://homes.cs.washington.edu/~soumya91/) in [GRAIL](https://grail.cs.washington.edu/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I also completed my undergraduate degree (2018-2021) in computer engineering at the Allen School.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm currently a Research Intern at [Runway](https://runwayml.com/) (they're hiring!), working to create improved, interactive virtual green-screening algorithms using machine learning.
+
+<mark>I'm looking to start a Ph.D. in this and related areas beginning Fall 2022! Please reach out to me via email or Twitter DM (below) if I seem like a good fit.</mark>
