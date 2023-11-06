@@ -6,6 +6,7 @@ description: "Courses I've had the privilege to be a teaching assistant for:"
 nav: true
 ---
 
+- Fall 2022 / [Cornell CS 4620: Computer Graphics](https://www.cs.cornell.edu/courses/cs4620/2023fa/cs4620-web/) (taught by [Prof. Abe Davis](http://abedavis.com/))
 - Spring 2021 / [CSE 455: Computer Vision](https://courses.cs.washington.edu/courses/cse455/21sp/) (taught by [Dr. Joseph Redmon](https://pjreddie.com/))
   - I see that the website is broken. I will look into fixing it. In the meanwhile, here is an older version of the [course](https://courses.cs.washington.edu/courses/cse455/19au/).
 - Winter 2021 / [CSE 446: Machine Learning](https://courses.cs.washington.edu/courses/cse446/21wi/) (taught by [Prof. Byron Boots](https://homes.cs.washington.edu/~bboots/))
