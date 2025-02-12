@@ -182,7 +182,7 @@ scholar:
   last_name: Einstein
   first_name: [Albert, A.]
 
-  style: acm
+  style: /assets/csl/acm-sig-proceedings.csl
   locale: en
 
   source: /_bibliography/
