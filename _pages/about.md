@@ -19,3 +19,11 @@ News
 * **2022** — Started my Ph.D. at Cornell!
 * **Jun 2022** — Completed my M.S. degree and won the [Outstanding Senior Award](https://news.cs.washington.edu/2022/06/24/be-brave-be-kind-and-do-great-things-allen-school-celebrates-the-graduates-of-2020-2021-and-2022/) and was nominated for the [Dean's Medal in the College of Engineering](https://www.engr.washington.edu/news/deans-medalists/past-medalists)!
 * **Jun 2021** — Graduated with a B.S. in Computer Engineering! :confetti_ball:
+
+<hr>
+
+Selected Publications
+======
+{% include selected-publications.html %}
+
+See all on the [Publications](/publications/) page.

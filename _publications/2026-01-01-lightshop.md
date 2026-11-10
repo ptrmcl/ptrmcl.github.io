@@ -1,6 +1,8 @@
 ---
 title: "LightShop: High-Precision Interactive Computational Light Painting"
 collection: publications
+selected: 2
+thumbnail: lightshop.gif
 category: conferences
 permalink: /publication/2026-01-01-lightshop
 excerpt: "Peter F. Michael, Andrew Arena, Harald Haraldsson, and Abe Davis"
