@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- light beam -->
+  <polygon points="23.6,36.3 36.3,23.6 63,57 27,57" fill="#ffd24a" fill-opacity="0.55"/>
+  <!-- pool of light -->
+  <ellipse cx="45" cy="57.5" rx="18" ry="4.5" fill="#ffc21a"/>
+  <!-- mount arm -->
+  <polygon points="9.4,4.6 19.4,14.6 16.6,17.4 6.6,7.4" fill="#2b2f3a"/>
+  <circle cx="8" cy="6" r="4" fill="#2b2f3a"/>
+  <!-- lamp body -->
+  <g transform="rotate(45 22 22)">
+    <rect x="12" y="13" width="20" height="18" rx="3" fill="#2b2f3a"/>
+    <rect x="30" y="11" width="5" height="22" rx="1.5" fill="#4a5060"/>
+    <rect x="31.5" y="13" width="2.5" height="18" fill="#fff4c2"/>
+  </g>
+</svg>

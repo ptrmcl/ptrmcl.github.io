@@ -1,283 +1,359 @@
-# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Peter
-middle_name: F.
-last_name: Michael
-email: pm568@cornell.edu
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔮 # the emoji used as the favicon
-url: https://ptrmcl.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
-impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Peter F. Michael"
+title_separator          : "-"
+name                     : &name "Peter F. Michael"
+description              : &description "Peter F. Michael — Ph.D. candidate in computational imaging at Cornell CS"   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://peterfmichael.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "ptrmcl/ptrmcl.github.io"
 
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+# Site Author - The following control what appear as part of the author content on the side bar.
+#               If a field is blank the icon and link will not appear, otherwise it will be shown.
+#               Additional customization can be done by editing /_includes/author-profile.html
+author:
+  # Biographic information
+  avatar           : "profile.jpg"
+  name             : "Peter F. Michael"
+  pronouns         : # example: "she/her"  
+  bio              : "Ph.D. Candidate, Computational Imaging"
+  location         : "Ithaca, NY"
+  employer         : "Cornell University"
+  uri              : # URL
+  email            : "pm568@cornell.edu" 
 
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
+  # Academic websites
+  academia         : # URL
+  arxiv            : # URL - Update with the correct link to your profile
+  googlescholar    : "https://scholar.google.com/citations?user=su0aO34AAAAJ"
+  inspire-hep      : # URL
+  impactstory      : # URL
+  orcid            : 
+  semantic         : # URL
+  ssrn             : # URL
+  pubmed           : 
+  researchgate     : # URL
+  scopus           : # URL
+  zotero           : # URL
 
-navbar_fixed: true
-footer_fixed: false
 
-# Dimensions
-max_width: 800px
+  # Repositories and software development
+  bitbucket        : # Username - Update with your username on the site
+  codepen          : # Username
+  dribbble         : # Username
+  github           : "ptrmcl"
+  kaggle           : # Username  
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
-# TODO: add layout settings (single page vs. multi-page)
+  # Social media
+  artstation       : # Username
+  bluesky          :  # Replace this with you Bluesky username
+  facebook         : # Username
+  flickr           : # Username
+  foursquare       : # Username
+  goodreads        : # Username
+  google_plus      : # Username
+  keybase          : # Username
+  instagram        : # Username
+  lastfm           : # Username
+  linkedin         : "peter-michael" # Username
+  mastodon         : # URL
+  medium           : # URL
+  pinterest        : # Username
+  soundcloud       : # Username
+  steam            : # Username
+  telegram         : # URL
+  tumblr           : # Username
+  twitter          : "gfxptr" # Username for X / Twitter
+  vine             : # Username
+  weibo            : # Username
+  wikipedia        : # Username
+  xing             : # Username
+  youtube          : # Username
+  zhihu            : # Username
 
-# -----------------------------------------------------------------------------
-# Open Graph
-# -----------------------------------------------------------------------------
-# Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+# Publication Category - The following the list of publication categories and their headings
+publication_category:
+  manuscripts:
+    title: 'Journal Articles'
+  conferences:
+    title: 'Conference Papers'
+  workshops:
+    title: 'Workshop Papers'
 
-# -----------------------------------------------------------------------------
-# Social integration
-# -----------------------------------------------------------------------------
+# Site Settings
+teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+breadcrumbs              : false # true, false (default)
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : false      #change to true to add link to talkmap on talks page
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            :
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages" # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  hide                   : false     # change to true to hide the RSS feed in the footer
+  path                   : # blank (default) uses feed.xml
 
-github_username: ptrmcl # your GitHub user name
-gitlab_username: # your GitLab user name
-twitter_username: gfxptr # your Twitter handle
-linkedin_username: peter-michael # your LinkedIn user name
-scholar_userid: su0aO34AAAAJ # your Google Scholar ID
-orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
-stackoverflow_id: #your stackoverflow id
 
-rss_icon: false
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
 
-contact_note: >
-  Email and Twitter DM are the best ways to reach out to me!
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
-panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : og-image.png   # Social media default site image (lives in /images/)
+og_description           :  # Social media default site image description
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
 
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
 
-blog_name:  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+# Analytics
+analytics:
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  google:
+    tracking_id          :
 
-# Pagination
-pagination:
-  enabled: true
 
-# Comments
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-# -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
-
-collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-news_limit: 5
-
-# -----------------------------------------------------------------------------
-# Jekyll settings
-# -----------------------------------------------------------------------------
-
-# Markdown and syntax highlight
-markdown: kramdown
-highlighter: rouge
-highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
-
-# Includes & excludes
-include: ['_pages']
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
 exclude:
-  - bin
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
   - Gemfile
-  - Gemfile.lock
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
   - vendor
 keep_files:
-  - CNAME
-  - .nojekyll
   - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Plug-ins
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# These settings control the types of collections used by the template
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+
+# These settings control how pages and collections are included in the site
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins
 plugins:
-  - jekyll-archives
-  - jekyll-diagrams
-  - jekyll-email-protect
   - jekyll-feed
-  - jekyll-github-metadata
-  - jekyll-paginate-v2
-  - jekyll-responsive-image
-  - jekyll/scholar
+  - jekyll-gist
+  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-target-blank
-  - jekyll-twitter-plugin
+  - jekyll-redirect-from
   - jemoji
 
-# Sitemap settings
-defaults:
-  - scope:
-      path:            "assets/**/*.*"
-    values:
-      sitemap:         false
-
-# Extras
-github: [metadata]
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
-# -----------------------------------------------------------------------------
-
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them). 
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
-
-scholar:
-
-  last_name: Michael
-  first_name: [Peter, F.]
-
-  style: acm-siggraph
-  locale: en
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
-
-  replace_strings: true
-  join_strings: true
-
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
-
-  query: "@*"
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
 
 
-# -----------------------------------------------------------------------------
-# Jekyll Responsive Images
-# -----------------------------------------------------------------------------
-
-responsive_image:
-  template: _includes/responsive_img.html
-  # Quality to use when resizing images.
-  default_quality: 80
-  sizes:
-    - width: 480
-    - width: 800
-    - width: 1400
-      quality: 90
-  # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
-  strip: true
-
-
-# -----------------------------------------------------------------------------
-# Jekyll Diagrams
-# -----------------------------------------------------------------------------
-
-jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
-
-
-# -----------------------------------------------------------------------------
-# Optional Features
-# -----------------------------------------------------------------------------
-
-enable_google_analytics:    false  # enables google analytics
-enable_panelbear_analytics: false  # enables panelbear analytics
-enable_mansory:             true   # enables automatic project cards arangement
-enable_math:                true   # enables math typesetting (uses MathJax)
-enable_tooltips:            false  # enables automatic tooltip links generated
-                                   # for each section titles on pages and posts
-enable_darkmode:            true   # enables switching between light/dark modes
-enable_navbar_social:       false  # enables displaying social links in the
-                                   # navbar on the about page
-enable_project_categories:  true   # enables categorization of projects into
-                                   # multiple categories
-enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 
-# -----------------------------------------------------------------------------
-# Library versions
-# -----------------------------------------------------------------------------
-
-academicons:
-  version: "1.9.0"
-  integrity: "sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
-bootstrap:
-  version: "4.5.2"
-  integrity:
-    css: "sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
-    js: "sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
-fontawesome:
-  version: "5.14.0"
-  integrity: "sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-jquery:
-  version: "3.5.1"
-  integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-mathjax:
-  version: "3.2.0"
-mansory:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
-mdb:
-  version: "4.19.1"
-  integrity:
-    css: "sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q=="
-    js: "sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw=="
-popper:
-  version: "2.4.4"
-  integrity: "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
-medium_zoom:
-  version: "1.0.6"
-  integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: development
