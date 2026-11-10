@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm a 5th year Ph.D. Candidate at [Cornell CS](https://www.cs.cornell.edu/) advised by [Abe Davis](https://www.cs.cornell.edu/abe/group/). My interests lie broadly in the field of computational imaging, where I aim to codesign hardware and algorithms to capture new kinds of interesting data. Specifically, I work in a subfield called computational illumination, which looks at encoding information into the light captured by cameras. I am **especially interested** in developing systems that work in real-world environments. I am grateful to be supported by the [NDSEG fellowship](https://ndseg.org/).
+Hello! I'm a 5th year Ph.D. Candidate at [Cornell CS](https://www.cs.cornell.edu/) advised by [Abe Davis](https://www.cs.cornell.edu/abe/group/). My interests lie broadly in the field of computational imaging, where I aim to codesign hardware and algorithms to capture new kinds of data. Specifically, I work in a subfield called computational illumination, which looks at encoding information into the light captured by cameras. I am **especially interested** in developing systems that work in real-world environments. I am grateful to be supported by the [NDSEG fellowship](https://ndseg.org/).
 
 Previously, I was a Master's student at the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/) in Seattle, where I worked in [GRAIL](https://grail.cs.washington.edu/). I also completed my undergraduate degree (2018-2021) in computer engineering at the Allen School.
 
